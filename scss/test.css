@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.sh-list {
+  width: 50%;
+}
+.sh-list li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+.sh-list .active {
+  background: skyblue;
+  color: white;
+}
+
+.alert-box, .alert-box-skyblue, .alert-box-orange, .alert-box-green {
+  width: 50%;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+}
+
+.alert-box-green {
+  background: green;
+}
+
+.alert-box-orange {
+  background: orange;
+}
+
+.alert-box-skyblue {
+  background: skyblue;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.maing-bg h4 {
+  font-size: 16px;
+}
+.maing-bg button {
+  color: red;
+}
+
+.background {
+  background-color: #2a4cb2;
+  font-size: 18px;
+}
+
+.box {
+  color: #eeeeee;
+  font-size: 22px;
+  background: brown;
+}
+
+.btn-blue, .btn-green, .btn-red {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-red {
+  color: red;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-blue {
+  color: blue;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}/*# sourceMappingURL=test.css.map */

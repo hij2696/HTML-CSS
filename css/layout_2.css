@@ -1,0 +1,329 @@
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.ani-navbar {
+  width: 180px;
+  background: coral;
+  color: white;
+  height: 10%;
+  padding: 25px;
+  position: fixed;
+  z-index: 3;
+  text-align: right;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+.ani-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+
+  50% {
+    transform: translateX(20px) skewX(-30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.nav-container {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding: 5px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  padding: 1px;
+  background-image: url(../image/shoes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /* filter: brightness(70%); */
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.main-content {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.main-button {
+  padding: 15px;
+  font-size: 20px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 150px;
+  /* z-index: 2; */
+}
+
+.explain-box {
+  width: 80%;
+  max-width: 600px;
+  /* max-height: 200px; */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -40px;
+  /* z-index: 1; */
+}
+
+.product-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.product-container div {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.product-container i {
+  background-color: burlywood;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 20px;
+}
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 15px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay-black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 100%;
+  transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay-black {
+  margin-top: 50%;
+}
+
+.form-background {
+  background-color: cadetblue;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+
+.w-50 {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.form-button {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+}
+
+.ani-text {
+  text-align: center;
+  /* transform: rotate(10deg); */
+  /* transform: scale(0.9); */
+}
+
+.ani-text:hover {
+  animation-name: left-right;
+  animation-duration: 1s;
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(0px);
+  }
+
+  33% {
+    transform: translateX(-100px);
+  }
+
+  66% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.ani-button {
+  padding: 15px 20px;
+  font-size: 20px;
+  background: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 30px auto;
+}
+
+.ani-button:hover {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(8deg);
+  }
+
+  75% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ani-x {
+  margin: 150px auto;
+  text-align: center;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer;
+}
+
+.ani-x:hover {
+  animation-name: turn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .product-container {
+    max-width: 600px;
+  }
+
+  .product-container div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    max-width: 400px;
+  }
+
+  .product-container div {
+    width: 100%;
+  }
+
+  .w-50 {
+    width: 100%;
+  }
+}

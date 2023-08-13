@@ -1,0 +1,126 @@
+@use 'reset';
+
+.sh-list {
+  width: 50%;
+
+  li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #eee;
+  }
+
+  .active {
+    background: skyblue;
+    color: white;
+  }
+}
+
+.alert-box {
+  width: 50%;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+}
+
+.alert-box-green {
+  @extend .alert-box;
+  background: green;
+}
+
+.alert-box-orange {
+  @extend .alert-box;
+  background: orange;
+}
+
+.alert-box-skyblue {
+  @extend .alert-box;
+  background: skyblue;
+}
+
+@mixin column($width-value) {
+  float: left;
+  width: $width-value;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.row {
+  .col-6 {
+    @include column(50%);
+  }
+}
+
+.row {
+  .col-4 {
+    @include column(33.33%);
+  }
+}
+
+// nesting 문법
+.maing-bg {
+  h4 {
+    font-size: 16px;
+  }
+
+  button {
+    color: red;
+  }
+}
+
+// 변수 문법
+$main-color: #2a4cb2;
+$sub-color: #eeeeee;
+$default-size: 20px;
+
+.background {
+  background-color: $main-color;
+  font-size: ($default-size - 2px);
+}
+
+.box {
+  color: $sub-color;
+  font-size: ($default-size + 2px);
+  background: reset.$main-background;
+}
+
+// @extend 문법
+%btn {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-red {
+  @extend %btn;
+  color: red;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+
+.btn-blue {
+  @extend %btn;
+  color: blue;
+}
+
+// @mixin 문법
+@mixin font-style($size-change) {
+  font-size: $size-change;
+  letter-spacing: -1px;
+}
+
+h2 {
+  @include font-style(40px);
+}
+
+h3 {
+  @include font-style(30px);
+}
+
+h4 {
+  @include font-style(20px);
+}
