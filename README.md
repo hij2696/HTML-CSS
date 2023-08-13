@@ -19,7 +19,7 @@ HTML / CSS
 
 [form & input](https://www.notion.so/form-input-0de453b66350458192c2fb589ad9a8b9?pvs=21)
 
-[Table 레이아웃 & vertical-align 속성](https://www.notion.so/Table-vertical-align-9e27a8b82880406db54b0b9b699e45e1?pvs=21)
+[table 레이아웃 & vertical-align 속성](https://www.notion.so/table-vertical-align-9e27a8b82880406db54b0b9b699e45e1?pvs=21)
 
 [Psuedo-class로 인터랙티브 버튼 만들기](https://www.notion.so/Psuedo-class-78546246d6634d0f9802e17fbac50c16?pvs=21)
 
@@ -53,8 +53,12 @@ HTML / CSS
 
 [CSS Grid 레이아웃](https://www.notion.so/CSS-Grid-fe0d375c82c9422ead9b88d9833af707?pvs=21)
 
+[position : sticky 활용](https://www.notion.so/position-sticky-fc22bf95a4e240ecbce03c1bf22b8716?pvs=21)
+
 [CSS 3D animation](https://www.notion.so/CSS-3D-animation-37a86318e90a44b0803fb0b565d2b241?pvs=21)
 
 [Bootstrap](https://www.notion.so/Bootstrap-2a1043a7dcf244c5afb71d2420a3d20b?pvs=21)
+
+[Emmet](https://www.notion.so/Emmet-f16bd6688e524e238721d839309b41c7?pvs=21)
 
 [Reference](https://www.notion.so/Reference-ba38bd8d5db7405da7f080abeaec3c22?pvs=21)
